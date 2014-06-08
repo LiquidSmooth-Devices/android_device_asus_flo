@@ -18,9 +18,9 @@
    "revision":      "kk4.4"
  },
  {
-   "remote": "sr",
-   "repository":  "kernel_asus_flo",
+   "remote": "lsd",
+   "repository":  "android_kernel_asus_flo",
    "target_path": "kernel/asus/flo",
-   "revision":      "kk4.4"
+   "revision":      "kitkat"
  }
 ]
