@@ -33,8 +33,8 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=flo user_
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 
 TARGET_KERNEL_SOURCE := kernel/asus/flo
-TARGET_KERNEL_CONFIG := slim_flo_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := sm-arm-eabi-4.7
+TARGET_KERNEL_CONFIG := liquid_flo_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7-sm
 
 TARGET_POWERHAL_TOUCH_BOOST:= true
 
