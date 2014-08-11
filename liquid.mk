@@ -19,12 +19,6 @@
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH  := 1200
 
-#Needed for VOIP+SIP
-PRODUCT_PACKAGES := \
-    InCallUI \
-    Dialer \
-    rild
-
 # Release name
 PRODUCT_RELEASE_NAME := flo
 
@@ -46,5 +40,5 @@ PRODUCT_MANUFACTURER := Asus
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-#Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT=google/razor/flo:4.4.3/KTU84L/1148727:user/release-keys PRIVATE_BUILD_DESC="razor-user 4.4.3 KTU84L 1148727 release-keys"
+# Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT=google/razor/flo:4.4.4/KTU84P/1227136:user/release-keys PRIVATE_BUILD_DESC="razor-user 4.4.4 KTU84P 1227136 release-keys"
