@@ -230,7 +230,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.interface=wlan0 \
 	wifi.supplicant_scan_interval=180 \
-    windowsmgr.max_events_per_sec=275
+    windowsmgr.max_events_per_sec=150
 
 # Enable AAC 5.1 output
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -263,16 +263,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.hwui.text_large_cache_width=2048 \
 	ro.hwui.text_large_cache_height=1024
 
-# Hardware codecs
-PRODUCT_PROPERTY_OVERRIDES += \
-    qcom.hw.aac.encoder=true
-
-PRODUCT_PACKAGES += \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxEvrcEnc \
-    libOmxQcelp13Enc
-
 # NFC packages
 PRODUCT_PACKAGES += \
     libnfc-nci \
@@ -288,6 +278,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     device/asus/flo/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/asus/flo/nfc/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf
+
+PRODUCT_LOCALES := en_US es_US de_DE zh_CN
 
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, hardware/qcom/msm8960/msm8960.mk)

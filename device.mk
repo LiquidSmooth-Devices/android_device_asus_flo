@@ -32,7 +32,14 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     nfc_nci.flo
-    
+
+# F2FS filesystem
+PRODUCT_PACKAGES += \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs \
+    f2fstat
+
 # OTA ID
 PRODUCT_PROPERTY_OVERRIDES += \
     otaupdater.otaid=liquidflo
