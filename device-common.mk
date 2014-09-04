@@ -263,16 +263,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.hwui.text_large_cache_width=2048 \
 	ro.hwui.text_large_cache_height=1024
 
-# Hardware codecs
-PRODUCT_PROPERTY_OVERRIDES += \
-    qcom.hw.aac.encoder=true
-
-PRODUCT_PACKAGES += \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxEvrcEnc \
-    libOmxQcelp13Enc
-
 # NFC packages
 PRODUCT_PACKAGES += \
     libnfc-nci \
@@ -289,5 +279,11 @@ PRODUCT_COPY_FILES += \
     device/asus/flo/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/asus/flo/nfc/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf
 
+PRODUCT_LOCALES := en_US es_US de_DE zh_CN
+
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
+
+# Mpdecision init.d script
+PRODUCT_COPY_FILES += \
+    device/asus/flo/01mpdecision:system/etc/init.d/01mpdecision
