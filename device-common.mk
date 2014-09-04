@@ -230,7 +230,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.interface=wlan0 \
 	wifi.supplicant_scan_interval=180 \
-    windowsmgr.max_events_per_sec=150
+    windowsmgr.max_events_per_sec=275
 
 # Enable AAC 5.1 output
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -262,6 +262,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.hwui.text_small_cache_height=1024 \
 	ro.hwui.text_large_cache_width=2048 \
 	ro.hwui.text_large_cache_height=1024
+
+# Hardware codecs
+PRODUCT_PROPERTY_OVERRIDES += \
+    qcom.hw.aac.encoder=true
+
+PRODUCT_PACKAGES += \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxQcelp13Enc
 
 # NFC packages
 PRODUCT_PACKAGES += \

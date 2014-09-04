@@ -1,26 +1,26 @@
 [
  {
    "remote": "lsd",
-   "repository": "proprietary_vendor_asus",
+   "repository":  "proprietary_vendor_asus",
    "target_path": "vendor/asus",
-   "revision": "kitkat"
+   "revision":      "kitkat"
  },
  {
    "remote": "lsd",
-   "repository": "proprietary_vendor_broadcom",
+   "repository":  "proprietary_vendor_broadcom",
    "target_path": "vendor/broadcom",
-   "revision": "kitkat"
+   "revision":      "kitkat"
  },
  {
    "remote": "lsd",
-   "repository": "proprietary_vendor_qcom",
+   "repository":  "proprietary_vendor_qcom",
    "target_path": "vendor/qcom",
-   "revision": "kitkat"
+   "revision":      "kitkat"
  },
  {
    "remote": "lsd",
-   "repository": "android_kernel_asus_flo",
+   "repository":  "android_kernel_asus_flo",
    "target_path": "kernel/asus/flo",
-   "revision": "kitkat"
+   "revision":      "kitkat"
  }
 ]
