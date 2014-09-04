@@ -29,6 +29,10 @@ PRODUCT_COPY_FILES := \
 PRODUCT_PACKAGES += \
 	camera.flo
 
+# Mpdecision init.d script
+PRODUCT_COPY_FILES += \
+    device/asus/flo/01mpdecision:system/etc/init.d/01mpdecision
+
 # NFC
 PRODUCT_PACKAGES += \
     nfc_nci.flo
