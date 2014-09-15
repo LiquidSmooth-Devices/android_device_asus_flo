@@ -35,10 +35,10 @@ PRODUCT_PACKAGES += \
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
-        LiveWallpapers \
-        LiveWallpapersPicker \
-        VisualizationWallpapers \
-        librs_jni
+    LiveWallpapers \
+    LiveWallpapersPicker \
+    VisualizationWallpapers \
+    librs_jni
 
 PRODUCT_COPY_FILES += \
 	device/asus/flo/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
@@ -166,6 +166,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors
+
 PRODUCT_COPY_FILES += \
     device/asus/flo/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
@@ -202,17 +203,17 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-        libloc_adapter \
-        libloc_eng \
-        libloc_api_v02 \
-        libloc_ds_api \
-        libloc_core \
-        libizat_core \
-        libgeofence \
-        libgps.utils \
-        gps.conf \
-        gps.msm8960 \
-        flp.msm8960
+    libloc_adapter \
+    libloc_eng \
+    libloc_api_v02 \
+    libloc_ds_api \
+    libloc_core \
+    libizat_core \
+    libgeofence \
+    libgps.utils \
+    gps.conf \
+    gps.msm8960 \
+    flp.msm8960
 
 PRODUCT_PACKAGES += \
 	bdAddrLoader \
@@ -246,7 +247,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qualcomm.cabl=1 \
 	hw.cabl.level=Auto \
 	persist.qcom.cabl.video_only=1
-
 
 # Configure libhwui
 PRODUCT_PROPERTY_OVERRIDES += \
